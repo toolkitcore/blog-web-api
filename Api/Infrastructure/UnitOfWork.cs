@@ -17,6 +17,8 @@ namespace Api.Infrastructure
 
         public IUserRepository UserRepository { get; }
         public IBookRepository BookRepository { get; }
+        public IBlogRepository BlogRepository { get; }
+        public ITopicRepository TopicRepository { get; }
         //
         public UnitOfWork(ApplicationDbContext dbContext)
         {
@@ -25,6 +27,8 @@ namespace Api.Infrastructure
 
             UserRepository = new UserRepository(_context);
             BookRepository = new BookRepository(_context);
+            TopicRepository = new TopicRepository(_context);
+            BlogRepository = new BlogRepository(_context);
         }
 
         // save changes

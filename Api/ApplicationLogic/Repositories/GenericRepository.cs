@@ -106,6 +106,9 @@ namespace Api.ApplicationLogic.Repositories
 
         public void DeleteRange(IEnumerable<T> entities)
             => _dbSet.RemoveRange(entities);
+        
+        public async Task DeleteAllAsync()
+            => await _dbSet.ExecuteDeleteAsync();
 
         public async Task Delete(object id)
         {

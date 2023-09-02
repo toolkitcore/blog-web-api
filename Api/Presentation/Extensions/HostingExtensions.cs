@@ -37,6 +37,7 @@ namespace Api.Presentation.Extensions
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
+                Log.Information("Please access the URL: " + "http://localhost:5253/swagger/index.html");
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
