@@ -12,12 +12,10 @@ namespace Api.ApplicationLogic.Services
     public class SeedService : ISeedService
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly ApplicationDbContext _context;
 
-        public SeedService(IUnitOfWork unitOfWork, ApplicationDbContext context)
+        public SeedService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            _context = context;
         }
 
         public async Task Seed()
@@ -42,9 +40,9 @@ namespace Api.ApplicationLogic.Services
                 });
             };
 
-            await _context.Topics.ExecuteDeleteAsync();
-            await _context.Blogs.ExecuteDeleteAsync();
-            
+            await _unitOfWork.TopicRepository.DeleteAllAsync();
+            await _unitOfWork.BlogRepository.DeleteAllAsync();
+
             await SeedingBlogData();
             await SeedingTopicData();
         }
@@ -59,7 +57,7 @@ namespace Api.ApplicationLogic.Services
                 {
                     await _unitOfWork.TopicRepository.AddRangeAsync(topics);
                 });
-                Log.Information("Seeding Topic data: " + JsonSerializer.Serialize(await _unitOfWork.BlogRepository.ToPagination(0, 1000)));
+                Log.Information("Seeding Topic data: " + JsonSerializer.Serialize(await _unitOfWork.TopicRepository.ToPagination(0, 1000)));
             };
         }
 

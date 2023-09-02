@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace Api.Infrastructure.Interface
 {
-    interface IGenericRepository<T> where T : class
+    public interface IGenericRepository<T> where T : class
     {
         Task AddAsync(T entity);
         Task AddRangeAsync(IEnumerable<T> entities);
