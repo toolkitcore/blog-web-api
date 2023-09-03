@@ -43,8 +43,8 @@ namespace Api.ApplicationLogic.Services
             await _unitOfWork.TopicRepository.DeleteAllAsync();
             await _unitOfWork.BlogRepository.DeleteAllAsync();
 
+            // await SeedingTopicData();
             await SeedingBlogData();
-            await SeedingTopicData();
         }
 
         private async Task SeedingTopicData()

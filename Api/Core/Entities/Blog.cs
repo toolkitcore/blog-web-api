@@ -8,6 +8,6 @@ namespace Api.Core.Entities
         public ICollection<Topic> Topics { get; set; }
         public string Content { get; set; } = string.Empty;
         public string Author { get; set; } = string.Empty;
-        public string Date { get; set; } = string.Empty;
+        public DateTimeOffset Date { get; set; }
     }
 }
