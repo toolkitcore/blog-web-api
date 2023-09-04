@@ -13,12 +13,12 @@ namespace Api.Presentation.Controller
         {
             _userWriteService = userWriteService;
         }
-        
+
         [Transaction]
         [HttpPost("login")]
         public async Task<IActionResult> Authenticate(LoginRequest request)
             => Ok(await _userWriteService.Authenticate(request));
-        
+
         [Transaction]
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterRequest request)

@@ -1,10 +1,10 @@
-﻿using Moq;
+﻿using Api.ApplicationLogic.Interface;
 using Api.ApplicationLogic.Services;
-using Api.Core.Entities;
-using Api.ApplicationLogic.Interface;
-using AutoFixture;
-using Api.Core.Commons;
 using Api.Core;
+using Api.Core.Commons;
+using Api.Core.Entities;
+using AutoFixture;
+using Moq;
 
 namespace UnitTest
 {

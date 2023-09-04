@@ -1,7 +1,6 @@
 using Api.ApplicationLogic;
 using Api.Core;
 using Api.Infrastructure;
-using Api.Infrastructure.Extensions;
 using Api.Infrastructure.Persistence;
 using Api.Presentation.Middlewares;
 using Serilog;

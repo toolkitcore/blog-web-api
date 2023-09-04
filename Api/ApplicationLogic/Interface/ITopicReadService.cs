@@ -1,6 +1,5 @@
 using Api.Core.Commons;
 using Api.Core.Entities;
-using Models.Topic;
 
 namespace Api.ApplicationLogic.Interface
 {

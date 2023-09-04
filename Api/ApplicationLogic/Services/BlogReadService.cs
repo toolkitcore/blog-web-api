@@ -1,4 +1,3 @@
-using System.Text.Json;
 using Api.ApplicationLogic.Interface;
 using Api.Core;
 using Api.Core.Commons;
@@ -7,6 +6,7 @@ using Api.Infrastructure;
 using Api.Presentation.Constants;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using System.Text.Json;
 
 
 namespace Api.ApplicationLogic.Services

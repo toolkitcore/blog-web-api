@@ -1,6 +1,6 @@
 namespace Models.Blog
 {
-   
+
     public record BlogCreateModel
     {
         public string Title { get; set; } = string.Empty;

@@ -33,7 +33,7 @@ namespace Api.ApplicationLogic.Services
             await _unitOfWork.CommentRepository.DeleteAllAsync();
             await _unitOfWork.UserRepository.DeleteAllAsync();
 
-            
+
             // await SeedingTopicData();
             await SeedingUserData();
             await SeedingBlogData();

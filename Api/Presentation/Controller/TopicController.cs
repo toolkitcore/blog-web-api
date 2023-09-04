@@ -1,7 +1,6 @@
 using Api.ApplicationLogic.Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Models.Comment;
 using Models.Topic;
 
 namespace Api.Presentation.Controller

@@ -1,13 +1,12 @@
 ﻿using Api.ApplicationLogic.Interface;
-using Api.Infrastructure.Interface;
+using Api.ApplicationLogic.Mapper;
 using Api.Infrastructure;
+using Api.Infrastructure.Interface;
+using Api.Infrastructure.Persistence;
 using AutoFixture;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Moq;
-using System;
-using Api.Infrastructure.Persistence;
-using Api.ApplicationLogic.Mapper;
 
 namespace UnitTest
 {

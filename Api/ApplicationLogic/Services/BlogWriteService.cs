@@ -1,4 +1,3 @@
-using System.Text.Json;
 using Api.ApplicationLogic.Interface;
 using Api.Core;
 using Api.Core.Entities;
@@ -6,6 +5,7 @@ using Api.Infrastructure;
 using AutoMapper;
 using Models.Blog;
 using Serilog;
+using System.Text.Json;
 
 
 namespace Api.ApplicationLogic.Services

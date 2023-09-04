@@ -1,5 +1,5 @@
-﻿using System.Diagnostics;
-using Serilog;
+﻿using Serilog;
+using System.Diagnostics;
 
 namespace Api.Presentation.Middlewares
 {

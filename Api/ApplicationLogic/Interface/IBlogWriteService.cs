@@ -1,4 +1,3 @@
-using Api.Core.Entities;
 using Models.Blog;
 
 namespace Api.ApplicationLogic.Interface

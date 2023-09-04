@@ -3,7 +3,6 @@ using Api.Core;
 using Api.Infrastructure.Interface;
 using Api.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
-using Serilog;
 
 namespace Api.Infrastructure
 {

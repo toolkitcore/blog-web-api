@@ -1,7 +1,7 @@
-using System.Text.Json;
 using Api.ApplicationLogic.Interface;
 using Api.Core;
 using StackExchange.Redis;
+using System.Text.Json;
 
 #nullable disable
 
