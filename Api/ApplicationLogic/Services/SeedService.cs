@@ -34,13 +34,13 @@ namespace Api.ApplicationLogic.Services
             await _unitOfWork.UserRepository.DeleteAllAsync();
 
             
-            await SeedingUser();
-            await SeedingTopicData();
+            // await SeedingTopicData();
+            await SeedingUserData();
             await SeedingBlogData();
             // await SeedingCommentData();
         }
 
-        private async Task SeedingUser()
+        private async Task SeedingUserData()
         {
             if (!await _unitOfWork.UserRepository.AnyAsync())
             {
@@ -50,6 +50,7 @@ namespace Api.ApplicationLogic.Services
                 {
                     await _unitOfWork.UserRepository.AddRangeAsync(users);
                 });
+                Log.Information("Seeding User data: " + JsonSerializer.Serialize(await _unitOfWork.UserRepository.ToPagination(0, 1000)));
             };
         }
 

@@ -1,10 +1,10 @@
 [
   {
-    "id": 1,
-    "name": "React"
+    "Id": 1,
+    "Name": "React"
   },
   {
-    "id": 2,
-    "name": "JavaScript"
+    "Id": 2,
+    "Name": "JavaScript"
   }
 ]

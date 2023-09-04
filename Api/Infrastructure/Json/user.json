@@ -1,47 +1,23 @@
 [
   {
-    "id": 1,
-    "userName": "johndoe",
-    "email": "john.doe@example.com",
-    "password": "hashedpassword",
-    "role": "Admin",
-    "comments": [
-      {
-        "id": 1,
-        "text": "Great introduction to React!",
-        "commentDate": "2023-08-15T14:30:00Z",
-        "postID": 1
-      }
-    ]
+    "Id": 1,
+    "UserName": "johndoe",
+    "Email": "john.doe@example.com",
+    "Password": "$2a$11$8SylUOilhjdL8bfK.8lIg.Heu52KFJrsKLsACsvUroxQAd660dBQG",
+    "Role": "Admin"
   },
   {
-    "id": 2,
-    "userName": "janesmith",
-    "email": "jane.smith@example.com",
-    "password": "hashedpassword",
-    "role": "Subscriber",
-    "comments": [
-      {
-        "id": 2,
-        "text": "Looking forward to more React tutorials.",
-        "commentDate": "2023-08-16T09:45:00Z",
-        "postID": 1
-      }
-    ]
+    "Id": 2,
+    "UserName": "janesmith",
+    "Email": "jane.smith@example.com",
+    "Password": "$2a$11$8SylUOilhjdL8bfK.8lIg.Heu52KFJrsKLsACsvUroxQAd660dBQG",
+    "Role": "Subscriber"
   },
   {
-    "id": 3,
-    "userName": "jsmith",
-    "email": "jsmith@example.com",
-    "password": "hashedpassword",
-    "role": "Subscriber",
-    "comments": [
-      {
-        "id": 3,
-        "text": "JavaScript is the backbone of web development.",
-        "commentDate": "2023-08-20T14:10:00Z",
-        "postID": 2
-      }
-    ]
+    "Id": 3,
+    "UserName": "jsmith",
+    "Email": "jsmith@example.com",
+    "Password": "$2a$11$8SylUOilhjdL8bfK.8lIg.Heu52KFJrsKLsACsvUroxQAd660dBQG",
+    "Role": "Subscriber"
   }
 ]

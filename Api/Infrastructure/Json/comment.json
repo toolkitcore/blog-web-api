@@ -1,23 +1,23 @@
 [
   {
-    "id": 1,
-    "text": "Great introduction to React!",
-    "commentDate": "2023-08-15T14:30:00Z",
+    "Id": 1,
+    "Text": "Great introduction to React!",
+    "CommentDate": "2023-08-15T14:30:00Z",
     "PostID": 1,
-    "commenterID": 2
+    "CommenterID": 2
   },
   {
-    "id": 2,
-    "text": "Looking forward to more React tutorials.",
-    "commentDate": "2023-08-16T09:45:00Z",
+    "Id": 2,
+    "Text": "Looking forward to more React tutorials.",
+    "CommentDate": "2023-08-16T09:45:00Z",
     "PostID": 1,
-    "commenterID": 3
+    "CommenterID": 3
   },
   {
-    "id": 3,
-    "text": "JavaScript is the backbone of web development.",
-    "commentDate": "2023-08-20T14:10:00Z",
+    "Id": 3,
+    "Text": "JavaScript is the backbone of web development.",
+    "CommentDate": "2023-08-20T14:10:00Z",
     "PostID": 1,
-    "commenterID": 4
+    "CommenterID": 4
   }
 ]

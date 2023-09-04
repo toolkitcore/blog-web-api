@@ -1,51 +1,91 @@
 [
   {
-    "id": 1,
-    "title": "Getting Started with React",
-    "description": "Learn the basics of React.js",
-    "topics": [
+    "Id": 1,
+    "Title": "Getting Started with React",
+    "Description": "Learn the basics of React.js",
+    "Topics": [
       {
-        "id": 1,
-        "name": "React"
+        "Id": 1,
+        "Name": "React"
       }
     ],
-    "content": "In this blog post, we'll introduce you to React.js and show you how to get started with building web applications using this popular JavaScript library.",
-    "author": "John Doe",
-    "date": "2023-08-15T10:00:00Z",
-    "comments": [
+    "Content": "In this blog post, we'll introduce you to React.js and show you how to get started with building web applications using this popular JavaScript library.",
+    "Author": "John Doe",
+    "Date": "2023-08-15T10:00:00Z"
+  },
+  {
+    "Id": 2,
+    "Title": "JavaScript Fundamentals",
+    "Description": "A comprehensive guide to JavaScript",
+    "Topics": [
       {
-        "id": 1,
-        "text": "Great introduction to React!",
-        "commentDate": "2023-08-15T14:30:00Z",
-        "commenterID": 2
-      },
+        "Id": 2,
+        "Name": "JavaScript"
+      }
+    ],
+    "Content": "JavaScript is a versatile programming language used for web development. This blog post covers the fundamentals of JavaScript, including variables, functions, and control structures.",
+    "Author": "Jane Smith",
+    "Date": "2023-08-20T11:15:00Z"
+  },
+  {
+    "Id": 3,
+    "Title": "Introduction to Node.js",
+    "Description": "Explore server-side JavaScript with Node.js",
+
+    "Content": "Node.js is a runtime environment that allows you to run JavaScript on the server. This blog post provides an introduction to Node.js and its key features.",
+    "Author": "Alice Johnson",
+    "Date": "2023-08-25T14:30:00Z"
+  },
+  {
+    "Id": 4,
+    "Title": "The Power of CSS Grid Layout",
+    "Description": "Mastering modern web layout with CSS Grid",
+
+    "Topics": [
       {
-        "id": 2,
-        "text": "Looking forward to more React tutorials.",
-        "commentDate": "2023-08-16T09:45:00Z",
-        "commenterID": 3
+        "Id": 3,
+        "Name": "CSS"
+      }
+    ],
+    "Content": "CSS Grid Layout is a powerful tool for creating complex web layouts with ease. In this blog post, we'll explore the fundamentals of CSS Grid and demonstrate how it can simplify web design.",
+    "Author": "Eva Wilson",
+    "Date": "2023-08-28T09:45:00Z",
+    "Comments": [
+      {
+        "Id": 4,
+        "Text": "CSS Grid has revolutionized web layout!",
+        "CommentDate": "2023-08-28T14:30:00Z",
+        "CommenterID": 1
       }
     ]
   },
   {
-    "id": 2,
-    "title": "JavaScript Fundamentals",
-    "description": "A comprehensive guide to JavaScript",
-    "topics": [
+    "Id": 5,
+    "Title": "Securing Your Web Applications",
+    "Description": "Best practices for web application security",
+    "Topics": [
       {
-        "id": 2,
-        "name": "JavaScript"
+        "Id": 4,
+        "Name": "Security"
       }
     ],
-    "content": "JavaScript is a versatile programming language used for web development. This blog post covers the fundamentals of JavaScript, including variables, functions, and control structures.",
-    "author": "Jane Smith",
-    "date": "2023-08-20T11:15:00Z",
-    "comments": [
+    "Content": "Web application security is critical in today's online environment. This blog post outlines best practices and techniques to protect your web applications from common vulnerabilities.",
+    "Author": "Mark Johnson",
+    "Date": "2023-09-02T11:15:00Z"
+  },
+  {
+    "Id": 6,
+    "Title": "Advanced JavaScript Techniques",
+    "Description": "Exploring advanced JavaScript programming",
+    "Content": "Ready to take your JavaScript skills to the next level? This blog post delves into advanced JavaScript concepts, including closures, promises, and asynchronous programming.",
+    "Author": "Sophia Lee",
+    "Date": "2023-09-05T14:30:00Z",
+    "Comments": [
       {
-        "id": 3,
-        "text": "JavaScript is the backbone of web development.",
-        "commentDate": "2023-08-20T14:10:00Z",
-        "commenterID": 4
+        "Id": 5,
+        "Text": "Excellent overview of advanced JavaScript topics!",
+        "CommentDate": "2023-09-06T09:45:00Z",
+        "CommenterID": 2
       }
     ]
   }
