@@ -2,7 +2,7 @@
 
 Our blog website project aims to provide a platform for developers and tech enthusiasts to share their knowledge, insights, and updates on various tech-related topics. This project is designed to promote a collaborative and engaging community for tech enthusiasts, where users can create accounts, publish blog posts, engage in discussions through comments, and explore a wealth of tech-related content.
 
-## Key Features and Functionalities:
+## Key Features and Functionalities
 
 User Registration and Authentication: Users can easily create accounts and log in securely. Registration requires basic user information.
 
