@@ -7,6 +7,7 @@ namespace Api.Infrastructure
         IUserRepository UserRepository { get; }
         IBookRepository BookRepository { get; }
         IBlogRepository BlogRepository { get; }
+        ICommentRepository CommentRepository { get; }
         ITopicRepository TopicRepository { get; }
 
         /// <summary>

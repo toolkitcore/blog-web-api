@@ -1,9 +1,7 @@
 using Api.ApplicationLogic.Interface;
 using Api.Core.Entities;
 using Api.Infrastructure;
-using Api.Infrastructure.Persistence;
 using Api.Presentation.Constants;
-using Microsoft.EntityFrameworkCore;
 using Serilog;
 using System.Text.Json;
 
@@ -30,6 +28,20 @@ namespace Api.ApplicationLogic.Services
                 });
             };
 
+            await _unitOfWork.TopicRepository.DeleteAllAsync();
+            await _unitOfWork.BlogRepository.DeleteAllAsync();
+            await _unitOfWork.CommentRepository.DeleteAllAsync();
+            await _unitOfWork.UserRepository.DeleteAllAsync();
+
+            
+            await SeedingUser();
+            await SeedingTopicData();
+            await SeedingBlogData();
+            // await SeedingCommentData();
+        }
+
+        private async Task SeedingUser()
+        {
             if (!await _unitOfWork.UserRepository.AnyAsync())
             {
                 string json = File.ReadAllText(LinkConstants.UserData);
@@ -39,12 +51,6 @@ namespace Api.ApplicationLogic.Services
                     await _unitOfWork.UserRepository.AddRangeAsync(users);
                 });
             };
-
-            await _unitOfWork.TopicRepository.DeleteAllAsync();
-            await _unitOfWork.BlogRepository.DeleteAllAsync();
-
-            // await SeedingTopicData();
-            await SeedingBlogData();
         }
 
         private async Task SeedingTopicData()
@@ -72,6 +78,19 @@ namespace Api.ApplicationLogic.Services
                     await _unitOfWork.BlogRepository.AddRangeAsync(blogs);
                 });
                 Log.Information("Seeding Blog data: " + JsonSerializer.Serialize(await _unitOfWork.BlogRepository.ToPagination(0, 1000)));
+            };
+        }
+        private async Task SeedingCommentData()
+        {
+            if (!await _unitOfWork.CommentRepository.AnyAsync())
+            {
+                string json = File.ReadAllText(LinkConstants.CommentData);
+                List<Comment> comments = JsonSerializer.Deserialize<List<Comment>>(json)!;
+                await _unitOfWork.ExecuteTransactionAsync(async () =>
+                {
+                    await _unitOfWork.CommentRepository.AddRangeAsync(comments);
+                });
+                Log.Information("Seeding Comment data: " + JsonSerializer.Serialize(await _unitOfWork.CommentRepository.ToPagination(0, 1000)));
             };
         }
     }

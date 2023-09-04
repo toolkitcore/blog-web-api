@@ -1,5 +1,6 @@
 namespace Api.Core.Entities
 {
+#nullable disable
     public class Comment
     {
         public int Id { get; set; }

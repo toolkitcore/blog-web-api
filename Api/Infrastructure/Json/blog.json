@@ -1,148 +1,52 @@
 [
   {
-    "Id": 1,
-    "Title": "Introduction to Python Programming",
-    "Topics": [
+    "id": 1,
+    "title": "Getting Started with React",
+    "description": "Learn the basics of React.js",
+    "topics": [
       {
-        "Id": 1,
-        "Name": "Python"
+        "id": 1,
+        "name": "React"
       }
     ],
-    "Content": "Python is a versatile and easy-to-learn programming language...",
-    "Author": "John Doe",
-    "Date": "2023-09-03T22:30:00Z",
-    "Description": "Learn the basics of Python programming in this introductory blog post."
-  },
-  {
-    "Id": 2,
-    "Title": "Getting Started with JavaScript",
-    "Topics": [
+    "content": "In this blog post, we'll introduce you to React.js and show you how to get started with building web applications using this popular JavaScript library.",
+    "author": "John Doe",
+    "date": "2023-08-15T10:00:00Z",
+    "comments": [
       {
-        "Id": 2,
-        "Name": "JavaScript"
-      }
-    ],
-    "Content": "JavaScript is a popular programming language for web development...",
-    "Author": "Jane Smith",
-    "Date": "2023-09-03T22:30:00Z",
-    "Description": "Explore the fundamentals of JavaScript and start building web applications."
-  },
-  {
-    "Id": 3,
-    "Title": "Mastering Data Structures in C++",
-    "Topics": [
-      {
-        "Id": 3,
-        "Name": "C++"
+        "id": 1,
+        "text": "Great introduction to React!",
+        "commentDate": "2023-08-15T14:30:00Z",
+        "commenterID": 2
       },
       {
-        "Id": 4,
-        "Name": "Data Structures"
+        "id": 2,
+        "text": "Looking forward to more React tutorials.",
+        "commentDate": "2023-08-16T09:45:00Z",
+        "commenterID": 3
       }
-    ],
-    "Content": "Learn about essential data structures in C++ such as arrays, linked lists, and trees...",
-    "Author": "Alice Johnson",
-    "Date": "2023-09-03T22:30:00Z",
-    "Description": "Become proficient in C++ data structures for efficient programming."
+    ]
   },
   {
-    "Id": 4,
-    "Title": "Web Development with HTML and CSS",
-    "Topics": [
+    "id": 2,
+    "title": "JavaScript Fundamentals",
+    "description": "A comprehensive guide to JavaScript",
+    "topics": [
       {
-        "Id": 5,
-        "Name": "HTML"
-      },
-      {
-        "Id": 6,
-        "Name": "CSS"
+        "id": 2,
+        "name": "JavaScript"
       }
     ],
-    "Content": "Explore the basics of web development using HTML and CSS to create beautiful web pages...",
-    "Author": "David Brown",
-    "Date": "2023-09-03T22:30:00Z",
-    "Description": "A beginner's guide to building websites with HTML and CSS."
-  },
-  {
-    "Id": 5,
-    "Title": "Building Responsive Websites with Bootstrap",
-    "Topics": [
+    "content": "JavaScript is a versatile programming language used for web development. This blog post covers the fundamentals of JavaScript, including variables, functions, and control structures.",
+    "author": "Jane Smith",
+    "date": "2023-08-20T11:15:00Z",
+    "comments": [
       {
-        "Id": 7,
-        "Name": "Bootstrap"
+        "id": 3,
+        "text": "JavaScript is the backbone of web development.",
+        "commentDate": "2023-08-20T14:10:00Z",
+        "commenterID": 4
       }
-    ],
-    "Content": "Learn how to use the Bootstrap framework to create responsive and mobile-friendly websites...",
-    "Author": "Sarah Lee",
-    "Date": "2023-09-03T22:30:00Z",
-    "Description": "Master the art of building responsive web designs with Bootstrap."
-  },
-  {
-    "Id": 6,
-    "Title": "Diving into Java Programming",
-    "Topics": [
-      {
-        "Id": 8,
-        "Name": "Java"
-      }
-    ],
-    "Content": "Java is a powerful and versatile programming language used in various applications...",
-    "Author": "Michael Adams",
-    "Date": "2023-09-03T22:30:00Z",
-    "Description": "Start your journey into Java programming with this comprehensive guide."
-  },
-  {
-    "Id": 7,
-    "Title": "Exploring Data Science with Python",
-    "Topics": [
-      {
-        "Id": 9,
-        "Name": "Python"
-      },
-      {
-        "Id": 10,
-        "Name": "Data Science"
-      }
-    ],
-    "Content": "Discover how Python is used in the field of data science to analyze and visualize data...",
-    "Author": "Emily White",
-    "Date": "2023-09-03T22:30:00Z",
-    "Description": "Get started with data science and Python programming."
-  },
-  {
-    "Id": 8,
-    "Title": "Game Development with Unity",
-    "Topics": [
-      {
-        "Id": 11,
-        "Name": "Unity"
-      },
-      {
-        "Id": 12,
-        "Name": "Game Development"
-      }
-    ],
-    "Content": "Create your own games using the Unity game engine and C# programming language...",
-    "Author": "Daniel Johnson",
-    "Date": "2023-09-03T22:30:00Z",
-    "Description": "Learn the essentials of game development with Unity and C#."
-  },
-  {
-    "Id": 10,
-    "Title": "Secure Coding Practices",
-    "Topics": [
-      {
-        "Id": 13,
-        "Name": "Security"
-      },
-      {
-        "Id": 14,
-        "Name": "Best Practices"
-      }
-    ],
-    "Content": "Learn how to write secure code and follow best practices to protect your applications from vulnerabilities...",
-    "Author": "Robert Smith",
-    "Date": "2023-09-03T22:30:00Z",
-    "Description": "Ensure the security of your code with these essential practices."
+    ]
   }
 ]

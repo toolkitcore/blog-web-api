@@ -14,6 +14,8 @@ namespace Api.Presentation.Controller
         }
         [HttpGet]
         public async Task<IActionResult> GetAsync() => Ok(await _context.Blogs.Include(x => x.Topics).Take(3).ToListAsync());
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetAsync(int id) => Ok(await _context.Blogs.Include(x => x.Topics).FirstOrDefaultAsync(x => x.Id == id));
         [HttpPost]
         public async Task<IActionResult> post(Blog request) => Ok(await _context.Blogs.Include(x => x.Topics).Take(3).ToListAsync());
     }

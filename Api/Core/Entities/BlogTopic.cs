@@ -1,5 +1,6 @@
 namespace Api.Core.Entities
 {
+#nullable disable
     public class BlogTopic
     {
         public int Id { get; set; }
