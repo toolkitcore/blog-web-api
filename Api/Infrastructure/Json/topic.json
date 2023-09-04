@@ -1,58 +1,10 @@
 [
   {
-    "Id": 1,
-    "Name": "Python"
+    "id": 1,
+    "name": "React"
   },
   {
-    "Id": 2,
-    "Name": "JavaScript"
-  },
-  {
-    "Id": 3,
-    "Name": "C++"
-  },
-  {
-    "Id": 4,
-    "Name": "Data Structures"
-  },
-  {
-    "Id": 5,
-    "Name": "HTML"
-  },
-  {
-    "Id": 6,
-    "Name": "CSS"
-  },
-  {
-    "Id": 7,
-    "Name": "Bootstrap"
-  },
-  {
-    "Id": 8,
-    "Name": "Java"
-  },
-  {
-    "Id": 9,
-    "Name": "Python"
-  },
-  {
-    "Id": 10,
-    "Name": "Data Science"
-  },
-  {
-    "Id": 11,
-    "Name": "Unity"
-  },
-  {
-    "Id": 12,
-    "Name": "Game Development"
-  },
-  {
-    "Id": 13,
-    "Name": "Security"
-  },
-  {
-    "Id": 14,
-    "Name": "Best Practices"
+    "id": 2,
+    "name": "JavaScript"
   }
 ]
