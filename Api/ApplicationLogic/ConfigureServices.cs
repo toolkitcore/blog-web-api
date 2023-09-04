@@ -15,6 +15,9 @@ namespace Api.ApplicationLogic
             //blog     
             services.AddScoped<IBlogReadService, BlogReadService>();
             services.AddScoped<IBlogWriteService, BlogWriteService>();
+            // comment
+            services.AddScoped<ICommentReadService, CommentReadService>();
+            services.AddScoped<ICommentWriteService, CommentWriteService>();
 
             services.AddScoped<ISeedService, SeedService>();
 

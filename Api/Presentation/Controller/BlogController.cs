@@ -35,6 +35,5 @@ namespace Api.Presentation.Controller
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
             => Ok(await _blogWriteService.Delete(id));
-
     }
 }

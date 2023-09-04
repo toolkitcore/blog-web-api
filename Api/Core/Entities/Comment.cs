@@ -5,7 +5,7 @@ namespace Api.Core.Entities
     {
         public int Id { get; set; }
         public string Text { get; set; } = string.Empty;
-        public DateTimeOffset CommentDate { get; set; }
+        public DateTimeOffset CommentDate { get; set; } = DateTimeOffset.Now;
         public int CommenterID { get; set; }
         public User Commenter { get; set; }
         public int PostID { get; set; }
