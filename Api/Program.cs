@@ -13,6 +13,8 @@ builder.Services.AddSingleton(configuration);
 var app = await builder.ConfigureServices(configuration)
                         .ConfigurePipelineAsync(configuration);
 
+app.UseCors(x=>x.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
+
 NewRelic.Api.Agent.NewRelic.StartAgent();
 
 app.Run();

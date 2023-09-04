@@ -42,7 +42,7 @@ namespace Api.Presentation.Extensions
                 app.UseSwaggerUI();
             }
 
-            app.UseCors("_myAllowSpecificOrigins");
+            // app.UseCors("_myAllowSpecificOrigins");
 
             app.UseMiddleware<GlobalExceptionMiddleware>();
 
