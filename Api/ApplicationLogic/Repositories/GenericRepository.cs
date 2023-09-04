@@ -42,7 +42,7 @@ namespace Api.ApplicationLogic.Repositories
 
         public async Task<T> GetByIdAsync(object id)
             => await _dbSet.FindAsync(id)
-            ?? throw new ArgumentNullException(ErrorMessageConstants.NotFoundMessage);
+            ?? throw new ArgumentNullException(ErrorConstants.NotFoundMessage);
 
         public async Task<Pagination<T>> ToPagination(int pageIndex, int pageSize)
         {
@@ -86,11 +86,64 @@ namespace Api.ApplicationLogic.Repositories
             return result;
         }
 
-        public async Task<T> FirstOrDefaultAsync(Expression<Func<T, bool>> filter)
-            => await _dbSet.IgnoreQueryFilters()
-                            .AsNoTracking()
-                            .FirstOrDefaultAsync(filter)
-                            ?? throw new ArgumentNullException(ErrorMessageConstants.NotFoundMessage);
+        public async Task<Pagination<T>> GetAsync(
+            Expression<Func<T, bool>> filter = null,
+            Func<IQueryable<T>, IQueryable<T>> include = null,
+            int pageIndex = 0,
+            int pageSize = 10)
+        {
+            var query = _dbSet.AsQueryable();
+
+            if (include != null)
+            {
+                query = include(query);
+            }
+
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+
+            var itemCount = await query.CountAsync();
+            var items = await query.Skip(pageIndex * pageSize)
+                                  .Take(pageSize)
+                                  .AsNoTracking()
+                                  .ToListAsync();
+
+            var result = new Pagination<T>()
+            {
+                PageIndex = pageIndex,
+                PageSize = pageSize,
+                TotalItemsCount = itemCount,
+                Items = items,
+            };
+
+            return result;
+        }
+
+        public async Task<T> FirstOrDefaultAsync(
+            Expression<Func<T, bool>> filter = null,
+            Func<IQueryable<T>, IQueryable<T>> include = null)
+        {
+            var query = _dbSet.IgnoreQueryFilters()
+                              .AsNoTracking();
+
+            if (include != null)
+            {
+                query = include(query);
+            }
+
+            if (filter != null)
+            {
+                return await query.FirstOrDefaultAsync(filter)
+                       ?? throw new ArgumentNullException(ErrorConstants.NotFoundMessage);
+            }
+            else
+            {
+                return await query.FirstOrDefaultAsync()
+                       ?? throw new ArgumentNullException(ErrorConstants.NotFoundMessage);
+            }
+        }
 
         #endregion
         #region Update & delete
@@ -106,7 +159,7 @@ namespace Api.ApplicationLogic.Repositories
 
         public void DeleteRange(IEnumerable<T> entities)
             => _dbSet.RemoveRange(entities);
-        
+
         public async Task DeleteAllAsync()
             => await _dbSet.ExecuteDeleteAsync();
 
